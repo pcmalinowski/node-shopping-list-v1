@@ -19,7 +19,7 @@ ShoppingList.create('tomatoes', 3);
 ShoppingList.create('peppers', 4);
 
 Recipes.create(
-	`shredded chicken` [`claws`, `chicken`, `fire`, `seasoning`]);
+	`shredded chicken`, [`claws`, `chicken`, `fire`, `seasoning`]);
 
 // when the root of this router is called with GET, return
 // all current ShoppingList items
