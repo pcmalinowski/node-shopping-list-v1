@@ -20,6 +20,12 @@ ShoppingList.create('peppers', 4);
 
 Recipes.create(
 	`shredded chicken`, [`claws`, `chicken`, `fire`, `seasoning`]);
+Recipes.create(
+	`shredded chicken`, [`claws`, `chicken`, `fire`, `seasoning`]);
+Recipes.create(
+	`shredded chicken`, [`claws`, `chicken`, `fire`, `seasoning`]);
+Recipes.create(
+	`shredded chicken`, [`claws`, `chicken`, `fire`, `seasoning`]);
 
 // when the root of this router is called with GET, return
 // all current ShoppingList items
@@ -29,7 +35,7 @@ app.get('/shopping-list', (req, res) => {
 
 app.get('/recipes', (req, res) => {
   res.json(Recipes.get());
-})
+});
 
 app.listen(process.env.PORT || 8080, () => {
   console.log(`Your app is listening on port ${process.env.PORT || 8080}`);
